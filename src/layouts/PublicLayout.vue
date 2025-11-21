@@ -63,16 +63,7 @@ const handleLogout = async () => {
 
         <!-- Desktop Nav -->
         <nav class="hidden md:flex items-center space-x-8">
-          <RouterLink
-            to="/"
-            class="text-slate-600 hover:text-primary-600 font-medium"
-            >Accueil</RouterLink
-          >
-          <RouterLink
-            to="/products"
-            class="text-slate-600 hover:text-primary-600 font-medium"
-            >Nos Peintures</RouterLink
-          >
+          <!-- Liens supprimés car redondants avec le logo -->
         </nav>
 
         <!-- Actions -->
@@ -164,13 +155,6 @@ const handleLogout = async () => {
         v-if="isMobileMenuOpen"
         class="md:hidden bg-white border-t border-slate-100 p-4 space-y-4"
       >
-        <RouterLink to="/" class="block text-slate-600 font-medium"
-          >Accueil</RouterLink
-        >
-        <RouterLink to="/products" class="block text-slate-600 font-medium"
-          >Nos Peintures</RouterLink
-        >
-
         <div class="pt-4 border-t border-slate-100">
           <template v-if="authStore.user">
             <div class="text-sm text-slate-500 mb-2 px-2">
